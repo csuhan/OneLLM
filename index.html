@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7P13JJWZ21"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7P13JJWZ21');
+  </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>OneLLM: One Framework to Align All Modalities with Language</title>
+  <link rel="icon" type="image/x-icon" href="static/images/cuhk.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">OneLLM: One Framework to Align All Modalities with Language</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://csuhan.com/" target="_blank">Jiaming Han</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://kxgong.github.io/" target="_blank">Kaixiong Gong</a><sup>1,2</sup>,</span>
+                <a href="https://invictus717.github.io/" target="_blank">Yiyuan Zhang</a><sup>1,2</sup>,</span>
+                <span class="author-block">
+                <a href="https://myownskyw7.github.io/" target="_blank">Jiaqi Wang</a><sup>2</sup>,
+                </span>
+                <a href='http://kpzhang93.github.io/' target='_blank'>Kaipeng Zhang</a><sup>2</sup>
+                </br>
+                <span class="author-block">
+                <a href="http://dahua.site/" target="_blank">Dahua Lin</a><sup>1,2</sup>,
+                </span>
+                <span class="author-block">
+                <a href="https://mmlab.siat.ac.cn/yuqiao/index.html" target="_blank">Yu Qiao</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                  <a href="https://gaopengpjlab.github.io/" target="_blank">Peng Gao</a><sup>2</sup>,
+                </span>
+                <span class="author-block">
+                <a href="http://people.eecs.berkeley.edu/~xyyue/" target="_blank">Xiangyu Yue</a><sup>1,†</sup>
+                </span>
+            </div>
+                  <div class="is-size-5 publication-authors">
+                    <sup>1</sup>
+                    <a href='http://mmlab.ie.cuhk.edu.hk/' target='_blank'>Multimedia Lab, The Chinese University of Hong Kong</a>&emsp;
+                    </br>
+                    <sup>2</sup> <a href='https://github.com/OpenGVLab' target='_blank'>Shanghai Artificial Intelligence Laboratory
+                    </a>
+                  </div>
+                  
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                    <!-- ArXiv abstract Link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2312.xxxxx" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2312.xxxxx.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+                    
+
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/csuhan/OneLLM" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <a href="your demo link"><img src="https://www.gradio.app/_app/immutable/assets/gradio.8a5e8876.svg"></a>
+
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<video poster="" id="tree" autoplay controls muted loop height="100%">
+
+  <source src="static/videos/banner_video.mp4"
+  type="video/mp4">
+</video>
+-->
+
+<!-- Teaser video-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img width="650px" src="static/images/fig1.png" alt="cmp"/>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <img width="650px" src="static/images/fig1-2.png" alt="cmp"/>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <h2 class="subtitle has-text-centered">
+        <span><b>OneLLM</b> a universal encoder, a universal projection module and
+          modality tokens {modal} to switch between modalities. Bottom:
+          OneLLM expands supported modalities from three to <b>eight</b>.</span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- End teaser video -->
+
+
+<!-- Paper abstract -->
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multimodal large language models (MLLMs) have
+gained significant attention due to their strong multimodal
+understanding capability. However, existing works rely
+heavily on modality-specific encoders, which usually differ
+in architecture and are limited to common modalities.
+In this paper, we present <b>OneLLM</b>, an MLLM that aligns
+<b>eight</b> modalities to language using a unified framework.
+We achieve this through a unified multimodal encoder and
+a progressive multimodal alignment pipeline. In detail,
+we first train an image projection module to connect a vision
+encoder with LLM. Then, we build a universal projection
+module (UPM) by mixing multiple image projection
+modules and dynamic routing. Finally, we progressively
+align more modalities to LLM with the UPM. To
+fully leverage the potential of OneLLM in following instructions,
+we also curated a comprehensive multimodal instruction
+dataset, including <b>2M</b> items from image, audio, video,
+point cloud, depth/normal map, IMU and fMRI brain activity.
+OneLLM is evaluated on <b>25</b> diverse benchmarks, encompassing
+tasks such as multimodal captioning, question
+answering and reasoning, where it delivers excellent performance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            <b>The Architecture of OneLLM</b>, which consists of modality tokenizers, a universal encoder, a universal projection module (UPM)
+and an LLM. 
+          </p>
+          
+          <img src="static/images/fig2.png" alt="MY ALT TEXT"/>
+          
+          <p>
+            The modality tokenizer is a 2D/1D convolution layer to transform the input signal into a sequence of tokens. For simplicity,
+we omit video, depth/normal map tokenizers. The universal encoder is a frozen vision-language model (i.e. CLIP [67]) to extract high
+dimensional features. The UPM is composed of several projection experts and modality routers to align the input signal with language.
+For the alignment stage, we train modality tokenizers and UPM, and keep LLM frozen. For the instruction tuning stage, we only train the
+LLM and keep other models frozen. In a forward pass of UPM, we concatenate the input and modality tokens as input. Then we only take
+the modality tokens as a summary of the input signal and feed it into LLM for multimodal understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+<!-- Result -->
+<!-- <section class="section hero is-light"> -->
+  <section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-12">
+        <h2 class="title is-3">Experiment</h2>
+        <div class="content has-text-justified">
+          <p>
+            Evaluation on 12 Image-Text Benchmarks, including 6 VQA tasks (GQA [34], VQAv2 [26], OKVQA [55], TextVQA
+            (TVQA) [75], ScienceQA (SQA) [52] and Vizwiz [29]), 2 image captioning tasks (Nocaps [2] and Flickr30K [65]), and 4 multimodal
+            benchmarks (MME [20], MM Bench (MMB) [50], MMVet [98] and SEED [41]). The LLMs are Chinchilla [32], Vicuna [81], Qwen [6],
+            LLaMA [78] and LLaMA2 [79]. The evaluation metrics for VQA and captioning tasks are accuracy and CIDEr, respectively. The results
+            in bold and underline are the best and second-best results, respectively. -: Not reported result.
+          </p>
+          <div style="text-align:center;">
+            <img src="static/images/table1.png" alt="MY ALT TEXT"/>
+          </div>
+          <p>  
+            Our 7B model is even better than AnyMAL with 70B parameters. 
+            For image captioning tasks, OneLLM-7B is on-par with ChatBridge-13B. Although OneLLM is not specifically 
+            designed for vision tasks, our results demonstrate that OneLLM can also reach the leading level in vision specialized
+            LLMs, and the gap between MMLLMs and vision LLMs has further narrowed.
+          </p>
+          <img src="static/images/table2345.png" alt="MY ALT TEXT"/>
+
+          <p>
+            At the same time, OneLLM outperforms existing methods in video-text, audio-video-text, audio-text, and point clod-text tasks, highlighting
+            the 0-shot ability in multimodla comprehension.
+          </p>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-12">
+        <h2 class="title is-3">Qualitative Results on Eight Modalities.</h2>
+        <div class="content has-text-justified">
+          </div>
+          <p>
+            Please note that all demo inputs are from the web or the testing set of corresponding modalities.
+          </p>
+          <img width="900px" src="static/images/fig3.png" alt="cmp"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      If you find our work useful, please cite our paper. BibTex code is provided below:
+      <pre><code>@article{han2023onellm,
+        title={OneLLM: One Framework to Align All Modalities with Language}, 
+        author={ Han, Jiaming and Gong, Kaixiong and Zhang, Yiyuan and Wang, jiaqi and Zhang, Kaipeng and Lin, Dahua and Qiao, Yu and Gao, Peng and Yue, Xiangyu},
+        year={2023},
+        eprint={2312.xxxxx},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV}
+      }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
