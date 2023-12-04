@@ -1,10 +1,10 @@
-# OneLLM: One Framework to Align All Modalities with Language
+## OneLLM: One Framework to Align All Modalities with Language
 
-[[Project Page](https://onellm.csuhan.com)] [[Paper](OneLLM_Arxiv.pdf)] [[Web Demo](https://huggingface.co/spaces/csuhan/OneLLM)]
+[[Project Page](https://onellm.csuhan.com)] [[Paper](OneLLM_Arxiv.pdf)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)]
 
 ## News
 
-- **2023.12.01** Release model weights and inference code.
+- **2023.12.01** Release model weights and inference code.🎉
 
 ## Contents
 
@@ -14,7 +14,7 @@
 
 ### TODO
 
-- [ ] Data
+- [ ] Datai
 - [ ] Evaluation
 - [ ] Training
 
