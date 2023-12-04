@@ -118,20 +118,29 @@
                       </a>
                     </span>
                     
+                    <!-- Github link -->
+                    <span class="link-block">
+                      <a href="https://github.com/csuhan/OneLLM" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
 
-
-                  <!-- Github link -->
+                  <!-- Demo link -->
                   <span class="link-block">
-                    <a href="https://github.com/csuhan/OneLLM" target="_blank"
+                    <a href="https://huggingface.co/spaces/csuhan/OneLLM" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>Demo</span>
                   </a>
-                </span>
+                  </span>
 
-                <a href="your demo link"><img src="https://www.gradio.app/_app/immutable/assets/gradio.8a5e8876.svg"></a>
+                <!-- <a href="https://huggingface.co/spaces/csuhan/OneLLM"><img src="https://www.gradio.app/_app/immutable/assets/gradio.8a5e8876.svg"></a> -->
 
               </span>
             </div>
@@ -164,9 +173,7 @@
 
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        <span><b>OneLLM</b> a universal encoder, a universal projection module and
-          modality tokens {modal} to switch between modalities. Bottom:
-          OneLLM expands supported modalities from three to <b>eight</b>.</span>
+        <span><b>OneLLM</b> employs a universal enocoder and a universal projection module to align multimodal inputs with LLM. It also utilizes modality tokens {modal} to switch between modalities.</span>
       </h2>
     </div>
   </div>
@@ -232,7 +239,7 @@ and an LLM.
           
           <p>
             The modality tokenizer is a 2D/1D convolution layer to transform the input signal into a sequence of tokens. For simplicity,
-we omit video, depth/normal map tokenizers. The universal encoder is a frozen vision-language model (i.e. CLIP [67]) to extract high
+we omit video, depth/normal map tokenizers. The universal encoder is a frozen vision-language model (i.e. CLIP) to extract high
 dimensional features. The UPM is composed of several projection experts and modality routers to align the input signal with language.
 For the alignment stage, we train modality tokenizers and UPM, and keep LLM frozen. For the instruction tuning stage, we only train the
 LLM and keep other models frozen. In a forward pass of UPM, we concatenate the input and modality tokens as input. Then we only take
@@ -259,10 +266,9 @@ the modality tokens as a summary of the input signal and feed it into LLM for mu
         <h2 class="title is-3">Experiment</h2>
         <div class="content has-text-justified">
           <p>
-            Evaluation on 12 Image-Text Benchmarks, including 6 VQA tasks (GQA [34], VQAv2 [26], OKVQA [55], TextVQA
-            (TVQA) [75], ScienceQA (SQA) [52] and Vizwiz [29]), 2 image captioning tasks (Nocaps [2] and Flickr30K [65]), and 4 multimodal
-            benchmarks (MME [20], MM Bench (MMB) [50], MMVet [98] and SEED [41]). The LLMs are Chinchilla [32], Vicuna [81], Qwen [6],
-            LLaMA [78] and LLaMA2 [79]. The evaluation metrics for VQA and captioning tasks are accuracy and CIDEr, respectively. The results
+            Evaluation on 12 Image-Text Benchmarks, including 6 VQA tasks (GQA, VQAv2, OKVQA, TextVQA
+            (TVQA), ScienceQA (SQA) and Vizwiz), 2 image captioning tasks (Nocaps and Flickr30K), and 4 multimodal
+            benchmarks (MME, MM Bench (MMB), MMVet] and SEED). The evaluation metrics for VQA and captioning tasks are accuracy and CIDEr, respectively. The results
             in bold and underline are the best and second-best results, respectively. -: Not reported result.
           </p>
           <div style="text-align:center;">
@@ -278,7 +284,7 @@ the modality tokens as a summary of the input signal and feed it into LLM for mu
 
           <p>
             At the same time, OneLLM outperforms existing methods in video-text, audio-video-text, audio-text, and point clod-text tasks, highlighting
-            the 0-shot ability in multimodla comprehension.
+            the zero-shot ability in multimodla comprehension.
           </p>
           </div>
         
