@@ -14,7 +14,7 @@
 
 ### TODO
 
-- [ ] Datai
+- [ ] Data
 - [ ] Evaluation
 - [ ] Training
 
