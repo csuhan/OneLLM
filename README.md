@@ -2,11 +2,11 @@
 
 ### OneLLM: One Framework to Align All Modalities with Language
 
-- arXiv: [this link](https://arxiv.org/abs/2312.xxxxx)
+- arXiv: [arxiv.org/abs/2312.xxxxx](https://arxiv.org/abs/2312.xxxxx)
 
-- Project Page: [this link](https://csuhan.github.io/OneLLM/)
+- Project Page: [onellm.csuhan.com](https://onellm.csuhan.com/)
 
-- Code: [this link](https://github.com/csuhan/OneLLM)
+- Code: [github.com/csuhan/OneLLM](https://github.com/csuhan/OneLLM)
 
 
 ## Acknowledgments
