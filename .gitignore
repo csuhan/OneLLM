@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+output
+output_dir
+*.pth
+*.log
+weights

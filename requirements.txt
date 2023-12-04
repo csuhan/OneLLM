@@ -1,0 +1,14 @@
+--extra-index-url https://download.pytorch.org/whl/cu117
+torch==2.0.0+cu117
+packaging
+fairscale
+sentencepiece
+Pillow
+huggingface_hub
+open_clip_torch
+decord
+pytorchvideo==0.1.5
+torchaudio
+matplotlib
+flash-attn
+gradio
