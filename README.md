@@ -2,7 +2,7 @@
 
 ### OneLLM: One Framework to Align All Modalities with Language
 
-- arXiv: [arxiv.org/abs/2312.xxxxx](https://arxiv.org/abs/2312.xxxxx)
+- arXiv: [arxiv.org/abs/2312.03700](https://arxiv.org/abs/2312.03700)
 
 - Project Page: [onellm.csuhan.com](https://onellm.csuhan.com/)
 
