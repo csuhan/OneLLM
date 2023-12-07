@@ -1,6 +1,6 @@
 ## OneLLM: One Framework to Align All Modalities with Language
 
-[[Project Page](https://onellm.csuhan.com)] [[Paper](OneLLM_Arxiv.pdf)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)]
+[[Project Page](https://onellm.csuhan.com)] [[Paper](https://arxiv.org/abs/2312.03700)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)]
 
 ## News
 
@@ -73,7 +73,7 @@ python demos/multi_turn_mm.py --gpu_ids 0 --tokenizer_path config/llama2/tokeniz
 @article{han2023onellm,
   title={OneLLM: One Framework to Align All Modalities with Language},
   author={Han, Jiaming and Gong, Kaixiong and Zhang, Yiyuan and Wang, Jiaqi and Zhang, Kaipeng and Lin, Dahua and Qiao, Yu and Gao, Peng and Yue, Xiangyu},
-  journal={arXiv preprint arXiv:xxxx},
+  journal={arXiv preprint arXiv:2312.03700},
   year={2023}
 }
 ```
