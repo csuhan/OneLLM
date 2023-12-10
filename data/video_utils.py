@@ -52,7 +52,7 @@ def uniform_crop(images, size, spatial_idx, boxes=None, scale_size=None):
             crop if height is larger than width.
         boxes (ndarray or None): optional. Corresponding boxes to images.
             Dimension is `num boxes` x 4.
-        scale_size (int): optinal. If not None, resize the images to scale_size before
+        scale_size (int): optional. If not None, resize the images to scale_size before
             performing any crop.
     Returns:
         cropped (tensor): images with dimension of
