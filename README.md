@@ -1,6 +1,6 @@
 ## OneLLM: One Framework to Align All Modalities with Language
 
-[[Project Page](https://onellm.csuhan.com)] [[Paper](https://arxiv.org/abs/2312.03700)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)]
+[[Project Page](https://onellm.csuhan.com)] [[Paper](https://arxiv.org/abs/2312.03700)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)] [[Model🤗](https://huggingface.co/csuhan/OneLLM-7B)]
 
 ## News
 
@@ -51,7 +51,7 @@ pip install -v --disable-pip-version-check --no-cache-dir --no-build-isolation -
 
 ### Models
 
-We provide a preview model at: [csuhan/OneLLM-7B](https://huggingface.co/csuhan/OneLLM-7B).
+We provide a preview model on the Hugging Face at: [csuhan/OneLLM-7B](https://huggingface.co/csuhan/OneLLM-7B).
 
 ### Demo
 
@@ -83,4 +83,4 @@ python demos/multi_turn_mm.py --gpu_ids 0 --tokenizer_path config/llama2/tokeniz
 [LLaMA](https://github.com/facebookresearch/llama), [LLaMA-Adapter](https://github.com/OpenGVLab/LLaMA-Adapter), [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory), [Meta-Transformer](https://github.com/invictus717/MetaTransformer), [ChatBridge](https://github.com/joez17/ChatBridge)
 
 ## License
-Llama 2 is licensed under the [LLAMA 2 Community License](LICENSE_llama2), Copyright (c) Meta Platforms, Inc. All Rights Reserved.
+This project is developed based on Llama 2, please refer to the [LLAMA 2 Community License](LICENSE_llama2).
