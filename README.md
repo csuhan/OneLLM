@@ -1,6 +1,6 @@
 ## OneLLM: One Framework to Align All Modalities with Language
 
-[[Project Page](https://onellm.csuhan.com)] [[Paper](https://arxiv.org/abs/2312.03700)] [[Web Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)] [[Model🤗](https://huggingface.co/csuhan/OneLLM-7B)]
+[[Project Page](https://onellm.csuhan.com)] [[Paper](https://arxiv.org/abs/2312.03700)] [[HF Demo🤗](https://huggingface.co/spaces/csuhan/OneLLM)] [[Modelscope Demo🤖](https://modelscope.cn/studios/csuhan/OneLLM)] [[Model🤗](https://huggingface.co/csuhan/OneLLM-7B)]
 
 ## News
 
