@@ -8,3 +8,5 @@ output_dir
 *.pth
 *.log
 weights
+
+.venv
