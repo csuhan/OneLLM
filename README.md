@@ -18,12 +18,24 @@
 - [ ] Evaluation
 - [ ] Training
 
+### Initial Sagemaker setup
+
+To install PointNet in a SageMaker Studio Space (either JupyterLab or Code Editor) we need to install the Cuda Toolkit...
+
+```bash
+sudo apt-get update
+sudo apt-get install cuda-toolkit-11-7 -y
+export CUDA_HOME=/usr/local/cuda-11.7
+```
+
+Though the Cuda Toolkit is installed to ephemeral storage it isn't needed once the initial setup is complete.
+
 ### Install
 
 1. Clone the repo into a local folder.
 
 ```bash
-git clone https://github.com/csuhan/OneLLM
+git clone https://github.com/Prevayl/OneLLM
 
 cd OneLLM
 ```
@@ -31,14 +43,17 @@ cd OneLLM
 2. Install packages.
 
 ```bash
-conda create -n onellm python=3.9 -y
-conda activate onellm
+python -m venv ./.venv
+source .venv/bin/activate
 
 pip install -r requirements.txt
+```
 
-# install pointnet
+Install pointnet
+```bash
 cd model/lib/pointnet2
 python setup.py install
+cd ../../..
 ```
 
 3. Install Apex. (Optional)
@@ -55,12 +70,8 @@ We provide a preview model on the Hugging Face at: [csuhan/OneLLM-7B](https://hu
 
 ### Demo
 
-**Huggingface Demo:** [csuhan/OneLLM](https://huggingface.co/spaces/csuhan/OneLLM).
-
-**Local Demo:** Assume you have downloaded the weights to ${WEIGHTS_DIR}. Then run the following command to start a gradio demo locally.
-
 ```bash
-python demos/multi_turn_mm.py --gpu_ids 0 --tokenizer_path config/llama2/tokenizer.model --llama_config config/llama2/7B.json --pretrained_path ${WEIGHTS_DIR}/consolidated.00-of-01.pth
+python app.py
 ```
 
 <!-- ### Evaluation -->
