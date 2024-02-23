@@ -1,5 +1,6 @@
 --extra-index-url https://download.pytorch.org/whl/cu117
 torch==2.0.0+cu117
+wheel
 packaging
 fairscale
 sentencepiece
@@ -7,8 +8,10 @@ Pillow
 huggingface_hub
 open_clip_torch
 decord
+ffmpeg
 pytorchvideo==0.1.5
 torchaudio
 matplotlib
-flash-attn
 gradio
+plotly
+flash-attn==2.4.2
