@@ -12,3 +12,4 @@ datasets
 data_hub
 slurm*
 multimodal_llama2_7B
+weights
