@@ -1,0 +1,14 @@
+__pycache__
+*.pyc
+*.egg-info
+dist
+
+output
+output_dir
+*.pth
+*.log
+weights
+datasets
+data_hub
+slurm*
+multimodal_llama2_7B
