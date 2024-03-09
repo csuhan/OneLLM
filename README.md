@@ -62,6 +62,9 @@ python demos/multi_turn_mm.py --gpu_ids 0 --tokenizer_path config/llama2/tokeniz
 ```
 
 **CLI Demo:**
+```bash
+python demos/cli.py --image_path ${IMAGE_PATH} --gpu_ids 0 --tokenizer_path config/llama2/tokenizer.model --llama_config config/llama2/7B.json --pretrained_path ${WEIGHTS_DIR}/consolidated.00-of-01.pth
+```
 
 ### Data
 
@@ -138,11 +141,11 @@ Assume we have the pretrained `${STAGE3_MODEL}`, run [exps/multimodal_text_finet
 ## Citation
 
 ```
-@article{han2023onellm,
+@InProceedings{han2023onellm,
   title={OneLLM: One Framework to Align All Modalities with Language},
   author={Han, Jiaming and Gong, Kaixiong and Zhang, Yiyuan and Wang, Jiaqi and Zhang, Kaipeng and Lin, Dahua and Qiao, Yu and Gao, Peng and Yue, Xiangyu},
-  journal={arXiv preprint arXiv:2312.03700},
-  year={2023}
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  year={2024}
 }
 ```
 

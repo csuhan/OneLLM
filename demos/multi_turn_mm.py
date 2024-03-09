@@ -244,6 +244,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--tokenizer_path", type=str,
+        default="config/llama2/tokenizer.model",
         help="Path to the tokenizer.model file provided along with the LLaMA "
              "model."
     )
@@ -253,6 +254,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--llama_config", type=str, required=True,
+        default="config/llama2/7B.json",
         help="Path to the llama model config json."
     )
     parser.add_argument(
