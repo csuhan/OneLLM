@@ -69,7 +69,7 @@ Please check [Data.md](docs/Data.md) for more detail.
 
 ### Evaluation
 
-[TODO] Please check [Evaluation.md](docs/Evaluation.md) for more detail.
+Please check [Evaluation.md](docs/Evaluation.md) for more detail.
 
 ### Training
 
