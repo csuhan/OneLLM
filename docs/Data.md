@@ -1,7 +1,7 @@
 ## Data
 
 ### Data Format
-Here we give an overview of data format. For details, please check the data loading code: []() and [data/fintune_dataset.py]()
+Here we give an overview of data format. For details, please check the data loading code: [data/pretrain_dataset.py]() and [data/fintune_dataset.py]()
 
 #### Pretraining Data
 All the data except IMU are organized in `.csv` format. Each `.csv` has two columns: `caption` and `url`. `\t` is used as the delimiter. For example,
