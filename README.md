@@ -78,7 +78,7 @@ Please check [Evaluation.md](docs/Evaluation.md) for more detail.
 
 #### Image-Text Pretraining
 
-**Single Node 8-GPU Training**: [exps/image_text_pretrain_8gpu.sh]()
+**Single Node 8-GPU Training**: [exps/image_text_pretrain_8gpu.sh](exps/image_text_pretrain_8gpu.sh)
 <details><summary>Show More</summary>
 
 ```bash
@@ -100,7 +100,7 @@ torchrun --nproc_per_node=8 main_pretrain.py \
 ```
 </details>
 
-**Multi Node SLURM Training**: [exps/image_text_pretrain_slurm.sh]()
+**Multi Node SLURM Training**: [exps/image_text_pretrain_slurm.sh](exps/image_text_pretrain_slurm.sh)
 <details><summary>Show More</summary>
 
 ```bash
@@ -130,13 +130,13 @@ srun python -u main_pretrain.py \
 
 #### Multimodal-Text Pretraining
 
-**Stage II Pretraining**: Assume we have the pretrained `${IMAGE_TEXT_MODEL}`, run [exps/multimodal_text_pretrain_stage2.sh]() for video-audio-point-text pretraining.
+**Stage II Pretraining**: Assume we have the pretrained `${IMAGE_TEXT_MODEL}`, run [exps/multimodal_text_pretrain_stage2.sh](exps/multimodal_text_pretrain_stage2.sh) for video-audio-point-text pretraining.
 
-**Stage III Pretraining**: Assume we have the pretrained `${STAGE2_MODEL}`, run [exps/multimodal_text_pretrain_stage3.sh]() for depth-normal-imu-fmri-text pretraining.
+**Stage III Pretraining**: Assume we have the pretrained `${STAGE2_MODEL}`, run [exps/multimodal_text_pretrain_stage3.sh](exps/multimodal_text_pretrain_stage3.sh) for depth-normal-imu-fmri-text pretraining.
 
 #### Instruction Tuning
 
-Assume we have the pretrained `${STAGE3_MODEL}`, run [exps/multimodal_text_finetune.sh]() for multimodal instruction tuning.
+Assume we have the pretrained `${STAGE3_MODEL}`, run [exps/multimodal_text_finetune.sh](exps/multimodal_text_finetune.sh) for multimodal instruction tuning.
 
 ## Citation
 
