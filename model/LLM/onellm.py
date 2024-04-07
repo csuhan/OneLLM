@@ -329,6 +329,7 @@ class Transformer(nn.Module):
 
             self.start_tag[modal] = nn.Parameter(torch.rand(1, 1, params.dim))
             self.end_tag[modal] = nn.Parameter(torch.rand(1, 1, params.dim))
+        # TODO: Freeze some parameters at here. Freeze LLM for pretraining and Projection for finetuining.
 
     # @torch.no_grad()
 
