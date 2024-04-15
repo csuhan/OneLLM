@@ -59,7 +59,7 @@ def model_worker(args: argparse.Namespace) -> None:
 
     conv = conv_templates["v1"].copy()
 
-    image = Image.open(args.img_path).convert('RGB')
+    image = Image.open(args.image_path).convert('RGB')
     image = T_random_resized_crop(image).unsqueeze(0).cuda().to(target_dtype)
     while True:
         try:
