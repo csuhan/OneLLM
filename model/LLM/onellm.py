@@ -282,7 +282,7 @@ class Transformer(nn.Module):
         self.end_tag = nn.ParameterDict()
         self.modals = ['image', 'video', 'audio', 'point', 'rgbd', 'rgbn', 'fmri', 'imu']
         for modal in self.modals:
-            if modal in ['image', 'video', 'rgbn', 'rgbn']:
+            if modal in ['image', 'video', 'rgbd', 'rgbn']:
                 modal_tokens = 256 + 1
                 pass
             elif modal == 'audio':
