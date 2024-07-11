@@ -100,6 +100,42 @@ torchrun --nproc_per_node=8 main_pretrain.py \
 ```
 </details>
 
+**Multi Nodes DDP Training**:
+
+Run N scripts on N nodes at the time, then we can launch a multi-node DDP training. Following is an example script for one node:
+
+```
+MASTER_ADDR=IP_ADDRESS_OF_NODE_1
+NNODES=N
+MASTER_PORT=29500
+NPROC_PER_NODE=8
+
+RANK=0 or 1 or ... or N
+
+bash
+torchrun \
+--nnodes=$NNODES \
+--nproc_per_node=8 \
+--node_rank=$RANK \
+--master_port=$MASTER_PORT \
+--master_addr=$MASTER_ADDR \
+main_pretrain.py \
+--epochs 1 --dataset image \
+--batch_size 40 --accum_iter 16 \
+--model_parallel_size 1 \
+--data_parallel sdp \
+--save_consolidated \
+--llama_type onellm \
+--llama_ckpt_dir ${LLAMA_7B_PATH} \
+--llama_config config/llama2/7B.json \
+--tokenizer_path config/llama2/tokenizer.model \
+--auto_resume \
+--weight_decay 0.1 --output_dir ${OUTPUT_DIR} \
+--warmup_iters 2000 --lr_decay_iters 200000 --lr 5e-5 --min_lr 5e-6 --clip_grad 2 \
+--save_freq 1000 \
+2>&1 | tee -a ${OUTPUT_DIR}/output.log
+```
+
 **Multi Node SLURM Training**: [exps/image_text_pretrain_slurm.sh](exps/image_text_pretrain_slurm.sh)
 <details><summary>Show More</summary>
 
