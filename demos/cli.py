@@ -10,7 +10,7 @@ from fairscale.nn.model_parallel import initialize as fs_init
 from util.misc import setup_for_distributed
 from util.misc import default_tensor_type
 from model.meta import MetaModel
-from data.conversation.lib import conv_templates
+from data.conversation_lib import conv_templates
 from PIL import Image
 import torchvision.transforms as transforms
 
